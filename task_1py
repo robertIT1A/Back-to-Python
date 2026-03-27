@@ -1,0 +1,27 @@
+list = []
+
+while True:
+    task = {}
+
+    Task_name = input("Task Name: ")
+    prio = input("Priority: ")
+    date = input("Due Date: ")
+
+    if Task_name == "":
+        Task_name = "None"
+    elif prio == "":
+        prio = "None"
+    elif date == "":
+        date = "None"
+
+    task["Name"] = Task_name
+    task["Priority"] = prio
+    task["Date"] = date
+    # print(task)
+
+    list.append(task)
+
+    for i in list:
+        print(f"Task: {i['Name']} | Priority: {i['Priority']} | Due: {i['Date']}")
+
+    
